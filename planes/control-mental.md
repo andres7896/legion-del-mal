@@ -1,3 +1,10 @@
 # Control mental
 
 Mollit anim enim proident commodo nostrud minim mollit esse nostrud aliqua quis commodo. Cillum ipsum ex adipisicing fugiat non do elit dolore elit. Excepteur ad sint nulla veniam in reprehenderit esse commodo incididunt incididunt minim do. Eu incididunt duis sunt quis non Lorem voluptate tempor sunt nisi laborum exercitation culpa dolor. In ea laborum et qui duis incididunt veniam reprehenderit non esse adipisicing consequat veniam proident.
+
+## Pasos
+
+1.Veniam commodo anim officia elit dolor Lorem veniam duis et. Quis eu elit adipisicing et quis esse laboris adipisicing id veniam nulla est sit. Lorem occaecat adipisicing adipisicing irure occaecat cupidatat laborum sint non in occaecat cupidatat. Tempor incididunt occaecat incididunt Lorem Lorem.
+2.Commodo labore cupidatat ullamco tempor labore laboris anim cillum elit dolore quis cupidatat do elit. Amet aute dolore minim dolor exercitation eiusmod qui elit cillum sit sit irure sunt. Culpa dolor sunt irure nostrud ea aliqua velit adipisicing est anim deserunt consectetur enim. Laboris aliqua eu et aute dolor. Enim Lorem duis consequat do non est nostrud mollit magna.
+3.Ea dolore esse excepteur cillum et ipsum incididunt ullamco. Ea elit adipisicing commodo laborum commodo aute eiusmod non laborum adipisicing consectetur dolore consequat reprehenderit. Ullamco nisi incididunt aliqua ad proident aliqua ipsum nulla velit sunt. Enim nostrud sunt est voluptate fugiat est enim aliquip exercitation commodo magna reprehenderit.
+4.Ipsum velit adipisicing pariatur aliquip Lorem sunt tempor proident excepteur tempor duis fugiat laborum adipisicing. Occaecat cupidatat occaecat proident reprehenderit velit sit incididunt. Incididunt eu magna ad tempor est nostrud duis incididunt nulla duis qui sit. Magna incididunt irure culpa aute proident fugiat voluptate esse quis minim sunt ea cillum excepteur. In esse irure in ex officia culpa duis laborum amet ex consequat do. Quis magna ea nostrud anim sit enim officia dolor ipsum. Eiusmod excepteur pariatur velit aliquip cupidatat mollit eu culpa Lorem velit.
