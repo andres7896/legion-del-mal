@@ -7,7 +7,7 @@
 ![Último commit](https://img.shields.io/github/last-commit/andres7896/legion-del-mal)
 ![Licencia](https://img.shields.io/github/license/andres7896/legion-del-mal?cacheSeconds=60)
 
-# 🦹‍♂️ La Legión del Mal!!!
+# 🦹‍♂️ La Legión del Mal!!! - Desde el remoto
 
 > _"El mundo no se conquista con fuerza bruta, se conquista con un buen plan y control de versiones."_
 > — Lex Luthor, fundador
