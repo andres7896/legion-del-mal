@@ -20,3 +20,8 @@ habilidades:
   - Nanotecnología y autoregeneración
   - Base de datos con información de 47 civilizaciones extintas
   - Puede crear y controlar drones de combate ilimitados
+
+adicionales:
+  identidad_publica: "Ninguna. La mayoría de la humanidad no sabe que existe."
+  motivacion: "Recopilar, catalogar y preservar todo el conocimiento del universo. Si un planeta debe ser destruido para preservar su información, es un precio aceptable."
+  frase_celebre: "Los datos no mienten. Los seres orgánicos sí."
