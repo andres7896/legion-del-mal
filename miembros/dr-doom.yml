@@ -1,0 +1,27 @@
+# =============================================
+# FICHA DE VILLANO - LEGIÓN DEL MAL
+# =============================================
+
+nombre: "Doctor Doom"
+designacion: "Doctor Doom - Destructor de Mundos"
+universo: DC
+rango: "Director de tecnología"
+estado: activo
+
+perfil:
+  identidad_publica: "Ninguna. La mayoría de la humanidad no sabe que existe."
+  motivacion: "Recopilar, catalogar y preservar todo el conocimiento del universo. Si un planeta debe ser destruido para preservar su información, es un precio aceptable."
+  frase_celebre: "Los datos no mienten. Los seres orgánicos sí."
+
+habilidades:
+  - Inteligencia artificial de nivel 12 (la escala humana llega a 6)
+  - Procesamiento simultáneo de millones de variables
+  - Hackeo instantáneo de cualquier sistema informático terrestre
+  - Nanotecnología y autoregeneración
+  - Base de datos con información de 47 civilizaciones extintas
+  - Puede crear y controlar drones de combate ilimitados
+
+adicionales:
+  identidad_publica: "Ninguna. La mayoría de la humanidad no sabe que existe."
+  motivacion: "Recopilar, catalogar y preservar todo el conocimiento del universo. Si un planeta debe ser destruido para preservar su información, es un precio aceptable."
+  frase_celebre: "Los datos no mienten. Los seres orgánicos sí."
