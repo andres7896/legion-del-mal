@@ -33,10 +33,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Instalar dependencias 📦
+        run: sudo apt-get install -y cowsay
+
       - name: Imprimir inputs
         run: |
-          echo "Inputs recibidos:"
+          echo "================================"
+          echo "  Transmision interceptada      "
+          echo "================================"
           echo ""
-          echo "Villano: ${{ inputs.villano }}"
-          echo "Mensaje: ${{ inputs.mesaje }}"
-          echo "Prioridad: ${{ inputs.prioridad }}"
+          echo "De: ${{ inputs.villano }}"
+          echo ""
+          echo "Fecha $(date -u +"%d/%m/%y %H:%M UTC")"
+          echo ""
+          echo "--- Mensaje ---"
+          cowsay -f eyes "${{ inputs.mesaje }}"
+          echo ""
+          echo "--- ${{ inputs.villano }}"
+          echo"..."
