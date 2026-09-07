@@ -13,6 +13,20 @@ on:
           - 'El Cientifico Loco'
           - 'El Maestro del Caos'
         default: 'Dr. Maligno'
+      mesaje:
+        description: 'Contenido del mensaje'
+        required: true
+        type: string
+        default: 'Mensaje secreto de la Legion'
+      prioridad:
+        description: 'Prioridad del mensaje'
+        required: true
+        type: choice
+        options:
+          - 'Alta'
+          - 'Media'
+          - 'Baja'
+        default: 'Media'
 
 jobs:
   transmitir-mensaje:
