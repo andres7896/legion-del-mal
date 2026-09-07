@@ -13,7 +13,7 @@ on:
           - 'El Cientifico Loco'
           - 'El Maestro del Caos'
         default: 'Dr. Maligno'
-      mesaje:
+      mensaje:
         description: 'Contenido del mensaje'
         required: true
         type: string
@@ -26,6 +26,16 @@ on:
           - 'Alta'
           - 'Media'
           - 'Baja'
+        default: 'Media'
+      cow_character:
+        description: 'Tipo de mensaje'
+        required: true
+        type: choice
+        options:
+          - 'C3PO'
+          - 'atat'
+          - 'bees'
+          - 'clippy'
         default: 'Media'
 
 jobs:
@@ -47,7 +57,7 @@ jobs:
           echo "Fecha $(date -u +"%d/%m/%y %H:%M UTC")"
           echo ""
           echo "--- Mensaje ---"
-          cowsay -f eyes "${{ inputs.mesaje }}"
+          cowsay -f ${{ inputs.cow_character }} "${{ inputs.mensaje }}"
           echo ""
           echo "--- ${{ inputs.villano }}"
           echo "..."
