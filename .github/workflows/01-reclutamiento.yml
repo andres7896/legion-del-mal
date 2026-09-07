@@ -22,3 +22,23 @@ jobs:
           echo "Repo: ${{ github.repository }}"
           echo "SHA: ${{ github.sha }}"
           echo "Metadata: ${{ toJson(github) }}"
+
+      - name: Capacidades del agente
+        run: |
+          echo "Capacidades detectadas:"
+          echo "Sistema operativo"
+          uname -a
+          echo "Habilidades tecnicas"
+          node --version
+          git --version
+          python3 --version
+
+      - name: Reconocimiento de entorno
+        run: |
+          echo "Entorno de ejecución:"
+          echo "Sistema operativo: $(uname -s)"
+          echo "Versión del kernel: $(uname -r)"
+          echo "Arquitectura: $(uname -m)"
+          echo "Directorio actual: $(pwd)"
+          echo "Variables de entorno:"
+          printenv
