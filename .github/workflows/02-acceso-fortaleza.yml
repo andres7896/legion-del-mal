@@ -30,4 +30,4 @@ jobs:
           echo "Villanos:"
           ls miembros/`
           echo "Inteligencia:"
-          ls inteligencia/`
+          ls inteligencia/perdedores/`
