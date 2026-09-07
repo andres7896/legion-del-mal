@@ -28,14 +28,14 @@ on:
           - 'Baja'
         default: 'Media'
       cow_character:
-        description: 'Tipo de mensaje'
+        description: 'Personaje de vaca para el mensaje'
         required: true
         type: choice
         options:
-          - 'USA'
-          - 'atat'
+          - 'bong'
+          - 'fire'
           - 'bees'
-          - 'clippy'
+          - 'ghostbusters'
         default: 'Media'
 
 jobs:
