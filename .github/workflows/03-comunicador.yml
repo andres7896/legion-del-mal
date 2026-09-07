@@ -33,8 +33,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Imprimir inputs
+        run: |
+          echo "Inputs recibidos:"
+          echo ""
+          echo "Villano: ${{ inputs.villano }}"
+          echo "Mensaje: ${{ inputs.mesaje }}"
+          echo "Prioridad: ${{ inputs.prioridad }}"
