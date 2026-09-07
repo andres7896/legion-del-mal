@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
       - name: El agente llega a la fortaleza
         run: |
           echo "Agente ${{ github.actor }} ha llegado a la Fortaleza Prohibida."
@@ -15,3 +16,18 @@ jobs:
           ls -la
           echo ""
           echo "X pero que paso? no hay archivos de la Legion, parece que la fortaleza esta vacia."
+
+      - name: Desbloqueando los archivos secretos
+        uses: actions/checkout@v4
+
+      - name: Ahora si, vamos a ver los planes
+        run: |
+          echo "Buscar los archivos secretos de la Legion"
+          ls -la
+          echo "Funciona, ahora si podemos ver los archivos secretos de la Legion"
+          echo "Planes:"
+          ls planes/
+          echo "Villanos:"
+          ls villanos/`
+          echo "Inteligencia:"
+          ls inteligencia/`
