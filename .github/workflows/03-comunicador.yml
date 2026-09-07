@@ -50,4 +50,4 @@ jobs:
           cowsay -f eyes "${{ inputs.mesaje }}"
           echo ""
           echo "--- ${{ inputs.villano }}"
-          echo"..."
+          echo "..."
