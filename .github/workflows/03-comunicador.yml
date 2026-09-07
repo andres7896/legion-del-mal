@@ -1,0 +1,26 @@
+name: Comunicador de la Legion
+
+on:
+  workflow_dispatch:
+    inputs:
+      villano:
+        description: 'Nombre del villano que envia el mensaje'
+        required: true
+        type: choice
+        options:
+          - 'Dr. Maligno'
+          - 'El Profesor'
+          - 'El Cientifico Loco'
+          - 'El Maestro del Caos'
+        default: 'Dr. Maligno'
+
+jobs:
+  transmitir-mensaje:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
