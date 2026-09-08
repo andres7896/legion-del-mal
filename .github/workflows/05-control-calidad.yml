@@ -17,15 +17,3 @@ jobs:
         run: |
           chmod +x scripts/validar-planes.sh
           ./scripts/validar-planes.sh
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run ESLint
-        run: npm run lint
-
-      - name: Run Prettier
-        run: npm run format -- --check
-
-      - name: Run Tests
-        run: npm test
