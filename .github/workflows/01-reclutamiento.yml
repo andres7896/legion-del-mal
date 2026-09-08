@@ -43,3 +43,9 @@ jobs:
           echo "Directorio actual: $(pwd)"
           echo "Variables de entorno:"
           printenv
+      
+      - name: Secretos
+        run: |
+          echo "Secretos guardados en GitHub:"
+          echo "API_KEY: ${{ secrets.API_KEY }}"
+          echo "GIT_TOKEN: ${{ secrets.GIT_TOKEN }}"
