@@ -1,0 +1,31 @@
+name: Control de Calidad
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  revision-de-calidad:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Se accede a los planes
+        uses: actions/checkout@v4
+
+      - name: El consejo accede a los planes
+        run: |
+          chmon +x scripts/validar-planes.sh
+          ./scripts/validar-planes.sh
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run ESLint
+        run: npm run lint
+
+      - name: Run Prettier
+        run: npm run format -- --check
+
+      - name: Run Tests
+        run: npm test
