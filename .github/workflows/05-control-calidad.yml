@@ -15,7 +15,7 @@ jobs:
 
       - name: El consejo accede a los planes
         run: |
-          chmon +x scripts/validar-planes.sh
+          chmod +x scripts/validar-planes.sh
           ./scripts/validar-planes.sh
 
       - name: Install dependencies
