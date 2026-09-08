@@ -29,3 +29,10 @@ Laboris ex elit veniam do deserunt minim esse et adipisicing id veniam. Sit amet
 - Labore excepteur Lorem aliqua veniam consequat voluptate in ad id magna anim. Laboris commodo aute culpa minim incididunt dolor pariatur. Aliquip commodo magna laboris fugiat.
 - Tempor qui incididunt quis adipisicing proident magna consectetur occaecat aliqua aliquip. Excepteur duis aute voluptate officia cupidatat eu cillum id aute eiusmod. Anim consectetur voluptate fugiat ea sunt reprehenderit. Est exercitation deserunt incididunt ad Lorem esse voluptate. Proident aliqua cillum veniam veniam in nisi sit cupidatat sint duis qui Lorem sint. Laboris Lorem cupidatat laborum fugiat esse velit labore ad.
 -Officia magna amet esse mollit occaecat enim veniam nisi laborum tempor. Qui culpa qui pariatur do nisi aute ipsum culpa adipisicing Lorem mollit veniam. Dolor consectetur ad eu officia esse ea sit. Elit velit dolor commodo officia do mollit commodo exercitation velit excepteur officia laboris.
+
+## Estrategia recomendada
+
+**No enfrentar. Neutralizar su tecnología.**
+La prioridad con Iron Man no es el combate, es inutilizar a JARVIS. Sin JARVIS, Stark es un tipo brillante en un traje. Con JARVIS, es una red de vigilancia global. El virus anti-JARVIS v3.1 de Brainiac es la pieza clave de la Operación Banco Mundial.
+
+Si el combate es inevitable: Magneto. La armadura de Iron Man es metal.
