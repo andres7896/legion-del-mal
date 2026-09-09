@@ -1,0 +1,81 @@
+name: 🏷️ Tag a Release
+
+on:
+  push:
+    tags:
+      - "*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag a liberar (ej: v1.0.0)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  crear-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Obtener información del tag
+        id: tag
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            TAG="${GITHUB_REF#refs/tags/}"
+          else
+            TAG="${{ inputs.tag }}"
+          fi
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "Tag: ${TAG}"
+
+      - name: Generar registro de cambios
+        id: changelog
+        run: |
+          TAG="${{ steps.tag.outputs.tag }}"
+          # Buscar el tag anterior para comparar
+          TAG_ANTERIOR=$(git describe --tags --abbrev=0 "$TAG^" 2>/dev/null || echo "")
+
+          echo "Tag anterior: ${TAG_ANTERIOR:-ninguno}"
+
+          if [ -n "$TAG_ANTERIOR" ]; then
+            LOGS=$(git log --pretty=format:"- %h %s (%an)" "$TAG_ANTERIOR".."$TAG")
+          else
+            LOGS=$(git log --pretty=format:"- %h %s (%an)" --no-merges)
+          fi
+
+          {
+            echo "## 🚀 Novedades de la versión ${TAG}"
+            echo ""
+            echo "### 📦 Commits incluidos"
+            echo ""
+            echo "${LOGS:-_Sin commits registrados._}"
+            echo ""
+            echo "### 📊 Detalle de archivos modificados"
+            echo ""
+            echo '```'
+            if [ -n "$TAG_ANTERIOR" ]; then
+              git diff --stat "$TAG_ANTERIOR".."$TAG"
+            else
+              git diff --stat "$TAG^" "$TAG" 2>/dev/null || git show --stat --oneline "$TAG"
+            fi
+            echo '```'
+          } > changelog.md
+
+          cat changelog.md
+
+      - name: Crear release del tag
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.tag.outputs.tag }}
+          name: "Release ${{ steps.tag.outputs.tag }}"
+          body_path: changelog.md
+          draft: false
+          prerelease: false
+          generate_release_notes: false
