@@ -1,0 +1,29 @@
+name: 🤖 Bienvenido a la Legion
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+
+jobs:
+  respuesta-de-brainiac:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Brainiac responde al issue
+        uses: actions/github-script@v9.0.0
+        with:
+          script: |
+            const mensaje = `Gracias por tu reporte, ${{ github.event.issue.user.login }}. 🦾
+
+            Tu issue **#${context.issue.number}** ya está en nuestras manos. Brainiac lo está revisando en este preciso momento.
+
+            El Consejo de la Legión se pondrá en contacto contigo en cuanto haya una actualización.`;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: mensaje
+            });
