@@ -27,3 +27,22 @@ jobs:
               issue_number: context.issue.number,
               body: mensaje
             });
+
+      - name: Enviar correo de notificacion
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "Nuevo issue creado: #${{ github.event.issue.number }}"
+          to: sneider7896@gmail.com
+          from: Legion del Mal
+          body: |
+            Hola, se ha creado un nuevo issue en el repositorio ${{ github.repository }}.
+
+            Titulo: ${{ github.event.issue.title }}
+            Autor: ${{ github.event.issue.user.login }}
+            URL: ${{ github.event.issue.html_url }}
+
+            Brainiac ya esta revisando el issue.
