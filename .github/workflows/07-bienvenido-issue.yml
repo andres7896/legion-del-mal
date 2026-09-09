@@ -1,8 +1,9 @@
 name: 🤖 Bienvenido a la Legion
 
 on:
-  issues:
-    types: [opened]
+  # issues:
+  #   types: [opened]
+  workflow_dispatch:
 
 permissions:
   issues: write
